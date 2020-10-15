@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+      "flag": {
+        "type": "string"
+      },
+      "token": {
+        "type": "string"
+      },
+      "info": {
+        "type": "object",
+        "properties": {
+          "user_id": {
+            "type": "string"
+          },
+          "filename": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "user_id",
+          "filename"
+        ]
+      }
+    },
+    "required": [
+      "flag",
+      "token",
+      "info"
+    ]
+  }
