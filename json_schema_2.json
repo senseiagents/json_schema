@@ -1,0 +1,37 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "http://xdm.sensei.adobe.io/schemas/content/v1/content_transformation", 
+	"title": "Root", 
+	"type": "object",
+	"properties": {
+		"flag": {
+			"$id": "#root/flag", 
+			"title": "Flag", 
+			"type": "string",
+		},
+		"token": {
+			"$id": "#root/token", 
+			"title": "Token", 
+			"type": "string",
+		},
+		"info": {
+			"$id": "#root/info", 
+			"title": "Info", 
+			"type": "object",
+			"properties": {
+				"user_id": {
+					"$id": "#root/info/user_id", 
+					"title": "User_id", 
+					"type": "string",
+				},
+				"filename": {
+					"$id": "#root/info/filename", 
+					"title": "Filename", 
+					"type": "string",
+				}
+			}
+		}
+
+	}
+}
